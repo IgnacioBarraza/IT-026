@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void imc() {
         double calculate = Integer.parseInt(et1.getText().toString()) / (Double.parseDouble(et2.getText().toString()) * Double.parseDouble(et2.getText().toString()));
-        tv1.setText(String.valueOf(Integer.parseInt(et1.getText().toString()) / (Double.parseDouble(et2.getText().toString()) * Double.parseDouble(et2.getText().toString()))));
+        tv1.setText(String.valueOf(calculate));
 
         if (calculate < 18.49) {
-            tv2.setText("Come más chamo");
+            tv2.setText("Estas demasiado flaco bro, como más...");
         } else if (calculate >= 18.49 && calculate <= 22.99) {
-            tv2.setText("Tas bien chamo");
+            tv2.setText("Tas bien chamo, bien ahí");
         } else if (calculate > 24.99) {
             tv2.setText("Cierra el hocico chamo, tas waton");
         }
